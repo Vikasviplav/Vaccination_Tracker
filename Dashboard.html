@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      #nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+      }
+      #nav > a {
+        text-decoration: none;
+        color: white;
+      }
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #8caacf;
+      }
+
+      table tr:hover {
+        background-color: #ddd;
+      }
+
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #0468aa;
+        color: white;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+        <a href="./Register.html"><h1>Registration Page</h1></a>
+        <a href="./Dashboard.html"><h1>Dashboard Page</h1></a>
+        <a href="./Vaccination.html"><h1>Vaccination Page</h1></a>
+      </div>
+    </nav>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Designation</th>
+            <th>Priority</th>
+            <th>Vaccine</th>
+            <th>Status</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./Dashboard.js"></script>
+  </body>
+</html>

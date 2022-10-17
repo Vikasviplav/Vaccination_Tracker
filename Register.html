@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      #nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+      }
+      #nav > a {
+        text-decoration: none;
+        color: white;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #2b619e;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3973b6;
+      }
+
+      
+      form {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 30%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 30px;
+      }
+
+      label {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+        <a href="./Register.html"><h1>Registration Page</h1></a>
+        <a href="./Dashboard.html"><h1>Dashboard Page</h1></a>
+        <a href="./Vaccination.html"><h1>Vaccination Page</h1></a>
+      </div>
+    </nav>
+    <div>
+      <h1>Registration Page</h1>
+      <form>
+        <label for="id">ID: <input type="number" id="ID" /> </label><br /><br />
+        <label for="name">Name: <input type="text" id="name" /> </label
+        ><br /><br />
+        <label for="age">Age: <input type="number" id="age" /> </label
+        ><br /><br />
+
+        <label for="designation">Choose a Designation:</label>
+        <input type="radio" name="designation" value="Employee" />
+        <label for="Employee">Employee</label>
+        <input type="radio" name="designation" value="Student" />
+        <label for="Student">Student</label><br /><br />
+
+        <label for="priority">Choose a Priority:</label>
+
+        <select name="priority" id="priority">
+          <option value="4">P0</option>
+          <option value="3">P1</option>
+          <option value="2">P2</option>
+          <option value="1">P3</option></select
+        ><br /><br />
+
+        <label for="vaccine">Choose a Vaccine:</label>
+        <select name="vaccine" id="vaccine">
+          <option value="Covishield">Covishield</option>
+          <option value="Covaxin">Covaxin</option>
+          <option value="Sputnik">Sputnik</option></select
+        ><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  </body>
+  <script src="./Register.js"></script>
+</html>
